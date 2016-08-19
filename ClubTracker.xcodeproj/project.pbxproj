@@ -8,20 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		015BE8271D64A58400AF9B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8261D64A58400AF9B51 /* AppDelegate.swift */; };
-		015BE8291D64A58400AF9B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8281D64A58400AF9B51 /* ViewController.swift */; };
 		015BE82C1D64A58400AF9B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BE82A1D64A58400AF9B51 /* Main.storyboard */; };
 		015BE82E1D64A58400AF9B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015BE82D1D64A58400AF9B51 /* Assets.xcassets */; };
 		015BE8311D64A58400AF9B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BE82F1D64A58400AF9B51 /* LaunchScreen.storyboard */; };
+		015BE8401D64A9C700AF9B51 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE83F1D64A9C700AF9B51 /* SigninView.swift */; };
+		015BE8421D64A9DB00AF9B51 /* SigninView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BE8411D64A9DB00AF9B51 /* SigninView.xib */; };
+		015BE8461D64ADB700AF9B51 /* SelectClassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BE8451D64ADB700AF9B51 /* SelectClassView.xib */; };
+		015BE8481D64ADD100AF9B51 /* SelectClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8471D64ADD100AF9B51 /* SelectClassView.swift */; };
+		015BE84C1D64B25A00AF9B51 /* TeacherMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE84B1D64B25A00AF9B51 /* TeacherMenuView.swift */; };
+		015BE84E1D64B26E00AF9B51 /* TeacherMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BE84D1D64B26E00AF9B51 /* TeacherMenuView.xib */; };
+		015BE8521D64B8FD00AF9B51 /* TeacherMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8501D64B8FD00AF9B51 /* TeacherMenuItemCell.swift */; };
+		015BE8531D64B8FD00AF9B51 /* TeacherMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BE8511D64B8FD00AF9B51 /* TeacherMenuItemCell.xib */; };
+		015BE87A1D65EC2B00AF9B51 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8791D65EC2B00AF9B51 /* SigninVC.swift */; };
+		015BE87C1D65F10000AF9B51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE87B1D65F10000AF9B51 /* View.swift */; };
+		015BE8871D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8801D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.m */; };
+		015BE8881D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8821D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.m */; };
+		015BE8891D65F62800AF9B51 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8841D65F62800AF9B51 /* TPKeyboardAvoidingTableView.m */; };
+		015BE88A1D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 015BE8861D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		015BE88E1D6618A300AF9B51 /* SelectClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BE88D1D6618A300AF9B51 /* SelectClassVC.swift */; };
+		2838F5201D66DE6F0030FC44 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838F51F1D66DE6F0030FC44 /* HomeVC.swift */; };
+		2838F5221D66E06A0030FC44 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838F5211D66E06A0030FC44 /* TabbarView.swift */; };
+		2838F5241D66E0750030FC44 /* TabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2838F5231D66E0750030FC44 /* TabbarView.xib */; };
+		2838F5261D66E12B0030FC44 /* NavbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2838F5251D66E12B0030FC44 /* NavbarView.xib */; };
+		2838F5281D66E1440030FC44 /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838F5271D66E1440030FC44 /* NavbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		015BE8231D64A58400AF9B51 /* ClubTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015BE8261D64A58400AF9B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		015BE8281D64A58400AF9B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		015BE82B1D64A58400AF9B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		015BE82D1D64A58400AF9B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015BE8301D64A58400AF9B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		015BE8321D64A58400AF9B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015BE83F1D64A9C700AF9B51 /* SigninView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		015BE8411D64A9DB00AF9B51 /* SigninView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SigninView.xib; sourceTree = "<group>"; };
+		015BE8451D64ADB700AF9B51 /* SelectClassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectClassView.xib; sourceTree = "<group>"; };
+		015BE8471D64ADD100AF9B51 /* SelectClassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectClassView.swift; sourceTree = "<group>"; };
+		015BE84B1D64B25A00AF9B51 /* TeacherMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherMenuView.swift; sourceTree = "<group>"; };
+		015BE84D1D64B26E00AF9B51 /* TeacherMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherMenuView.xib; sourceTree = "<group>"; };
+		015BE8501D64B8FD00AF9B51 /* TeacherMenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherMenuItemCell.swift; sourceTree = "<group>"; };
+		015BE8511D64B8FD00AF9B51 /* TeacherMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeacherMenuItemCell.xib; sourceTree = "<group>"; };
+		015BE8791D65EC2B00AF9B51 /* SigninVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		015BE87B1D65F10000AF9B51 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		015BE87E1D65F62700AF9B51 /* ClubTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClubTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		015BE87F1D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		015BE8801D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		015BE8811D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		015BE8821D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		015BE8831D65F62800AF9B51 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		015BE8841D65F62800AF9B51 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		015BE8851D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		015BE8861D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		015BE88D1D6618A300AF9B51 /* SelectClassVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectClassVC.swift; sourceTree = "<group>"; };
+		2838F51F1D66DE6F0030FC44 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2838F5211D66E06A0030FC44 /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		2838F5231D66E0750030FC44 /* TabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabbarView.xib; sourceTree = "<group>"; };
+		2838F5251D66E12B0030FC44 /* NavbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavbarView.xib; sourceTree = "<group>"; };
+		2838F5271D66E1440030FC44 /* NavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +97,182 @@
 		015BE8251D64A58400AF9B51 /* ClubTracker */ = {
 			isa = PBXGroup;
 			children = (
-				015BE8261D64A58400AF9B51 /* AppDelegate.swift */,
-				015BE8281D64A58400AF9B51 /* ViewController.swift */,
-				015BE82A1D64A58400AF9B51 /* Main.storyboard */,
 				015BE82D1D64A58400AF9B51 /* Assets.xcassets */,
 				015BE82F1D64A58400AF9B51 /* LaunchScreen.storyboard */,
 				015BE8321D64A58400AF9B51 /* Info.plist */,
+				015BE8261D64A58400AF9B51 /* AppDelegate.swift */,
+				015BE87E1D65F62700AF9B51 /* ClubTracker-Bridging-Header.h */,
+				015BE83D1D64A5CA00AF9B51 /* Library */,
+				015BE83C1D64A5C200AF9B51 /* Model */,
+				015BE83B1D64A5B800AF9B51 /* ViewModel */,
+				015BE83A1D64A5AF00AF9B51 /* Controller */,
+				015BE8391D64A5A400AF9B51 /* View */,
+				015BE8381D64A59A00AF9B51 /* Common */,
+				015BE87B1D65F10000AF9B51 /* View.swift */,
 			);
 			path = ClubTracker;
+			sourceTree = "<group>";
+		};
+		015BE8381D64A59A00AF9B51 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		015BE8391D64A5A400AF9B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				015BE8551D64BA7600AF9B51 /* Nav BarView */,
+				015BE8541D64BA6400AF9B51 /* Tab BarView */,
+				015BE8431D64AD5500AF9B51 /* Teacher Section */,
+				015BE83E1D64A8F100AF9B51 /* SigninView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		015BE83A1D64A5AF00AF9B51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2838F51E1D66DE3E0030FC44 /* HomePage */,
+				015BE88C1D66187A00AF9B51 /* SelectClass */,
+				015BE88B1D66186D00AF9B51 /* Signin */,
+				015BE82A1D64A58400AF9B51 /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		015BE83B1D64A5B800AF9B51 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		015BE83C1D64A5C200AF9B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		015BE83D1D64A5CA00AF9B51 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				015BE87D1D65F5D900AF9B51 /* Scroll Keyboard Avoiding */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		015BE83E1D64A8F100AF9B51 /* SigninView */ = {
+			isa = PBXGroup;
+			children = (
+				015BE83F1D64A9C700AF9B51 /* SigninView.swift */,
+				015BE8411D64A9DB00AF9B51 /* SigninView.xib */,
+			);
+			name = SigninView;
+			sourceTree = "<group>";
+		};
+		015BE8431D64AD5500AF9B51 /* Teacher Section */ = {
+			isa = PBXGroup;
+			children = (
+				015BE8491D64B15800AF9B51 /* HomeView */,
+				015BE8441D64AD6100AF9B51 /* SelectClassView */,
+			);
+			name = "Teacher Section";
+			sourceTree = "<group>";
+		};
+		015BE8441D64AD6100AF9B51 /* SelectClassView */ = {
+			isa = PBXGroup;
+			children = (
+				015BE8451D64ADB700AF9B51 /* SelectClassView.xib */,
+				015BE8471D64ADD100AF9B51 /* SelectClassView.swift */,
+			);
+			name = SelectClassView;
+			sourceTree = "<group>";
+		};
+		015BE8491D64B15800AF9B51 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				015BE84A1D64B16500AF9B51 /* TeacherMenuView */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		015BE84A1D64B16500AF9B51 /* TeacherMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				015BE84F1D64B8C300AF9B51 /* MenuItemCell */,
+				015BE84B1D64B25A00AF9B51 /* TeacherMenuView.swift */,
+				015BE84D1D64B26E00AF9B51 /* TeacherMenuView.xib */,
+			);
+			name = TeacherMenuView;
+			sourceTree = "<group>";
+		};
+		015BE84F1D64B8C300AF9B51 /* MenuItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				015BE8501D64B8FD00AF9B51 /* TeacherMenuItemCell.swift */,
+				015BE8511D64B8FD00AF9B51 /* TeacherMenuItemCell.xib */,
+			);
+			name = MenuItemCell;
+			sourceTree = "<group>";
+		};
+		015BE8541D64BA6400AF9B51 /* Tab BarView */ = {
+			isa = PBXGroup;
+			children = (
+				2838F5211D66E06A0030FC44 /* TabbarView.swift */,
+				2838F5231D66E0750030FC44 /* TabbarView.xib */,
+			);
+			name = "Tab BarView";
+			sourceTree = "<group>";
+		};
+		015BE8551D64BA7600AF9B51 /* Nav BarView */ = {
+			isa = PBXGroup;
+			children = (
+				2838F5251D66E12B0030FC44 /* NavbarView.xib */,
+				2838F5271D66E1440030FC44 /* NavbarView.swift */,
+			);
+			name = "Nav BarView";
+			sourceTree = "<group>";
+		};
+		015BE87D1D65F5D900AF9B51 /* Scroll Keyboard Avoiding */ = {
+			isa = PBXGroup;
+			children = (
+				015BE87F1D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.h */,
+				015BE8801D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.m */,
+				015BE8811D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.h */,
+				015BE8821D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.m */,
+				015BE8831D65F62800AF9B51 /* TPKeyboardAvoidingTableView.h */,
+				015BE8841D65F62800AF9B51 /* TPKeyboardAvoidingTableView.m */,
+				015BE8851D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				015BE8861D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = "Scroll Keyboard Avoiding";
+			sourceTree = "<group>";
+		};
+		015BE88B1D66186D00AF9B51 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				015BE8791D65EC2B00AF9B51 /* SigninVC.swift */,
+			);
+			name = Signin;
+			sourceTree = "<group>";
+		};
+		015BE88C1D66187A00AF9B51 /* SelectClass */ = {
+			isa = PBXGroup;
+			children = (
+				015BE88D1D6618A300AF9B51 /* SelectClassVC.swift */,
+			);
+			name = SelectClass;
+			sourceTree = "<group>";
+		};
+		2838F51E1D66DE3E0030FC44 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				2838F51F1D66DE6F0030FC44 /* HomeVC.swift */,
+			);
+			name = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +333,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015BE84E1D64B26E00AF9B51 /* TeacherMenuView.xib in Resources */,
 				015BE8311D64A58400AF9B51 /* LaunchScreen.storyboard in Resources */,
+				2838F5261D66E12B0030FC44 /* NavbarView.xib in Resources */,
 				015BE82E1D64A58400AF9B51 /* Assets.xcassets in Resources */,
+				015BE8421D64A9DB00AF9B51 /* SigninView.xib in Resources */,
+				2838F5241D66E0750030FC44 /* TabbarView.xib in Resources */,
+				015BE8531D64B8FD00AF9B51 /* TeacherMenuItemCell.xib in Resources */,
+				015BE8461D64ADB700AF9B51 /* SelectClassView.xib in Resources */,
 				015BE82C1D64A58400AF9B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +352,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015BE8291D64A58400AF9B51 /* ViewController.swift in Sources */,
+				2838F5201D66DE6F0030FC44 /* HomeVC.swift in Sources */,
+				015BE88A1D65F62800AF9B51 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				2838F5281D66E1440030FC44 /* NavbarView.swift in Sources */,
+				2838F5221D66E06A0030FC44 /* TabbarView.swift in Sources */,
+				015BE8881D65F62800AF9B51 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				015BE8871D65F62800AF9B51 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				015BE84C1D64B25A00AF9B51 /* TeacherMenuView.swift in Sources */,
+				015BE8401D64A9C700AF9B51 /* SigninView.swift in Sources */,
+				015BE88E1D6618A300AF9B51 /* SelectClassVC.swift in Sources */,
+				015BE8521D64B8FD00AF9B51 /* TeacherMenuItemCell.swift in Sources */,
+				015BE8481D64ADD100AF9B51 /* SelectClassView.swift in Sources */,
+				015BE87A1D65EC2B00AF9B51 /* SigninVC.swift in Sources */,
+				015BE8891D65F62800AF9B51 /* TPKeyboardAvoidingTableView.m in Sources */,
+				015BE87C1D65F10000AF9B51 /* View.swift in Sources */,
 				015BE8271D64A58400AF9B51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +481,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ClubTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = creatudevelopers.ClubTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClubTracker/ClubTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,10 +495,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ClubTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = creatudevelopers.ClubTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClubTracker/ClubTracker-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +523,7 @@
 				015BE8371D64A58400AF9B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

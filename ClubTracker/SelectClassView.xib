@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectClassView" customModule="ClubTracker" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSelectClass" destination="ipg-vx-tvi" id="etg-13-Mm3"/>
+                <outlet property="tableView" destination="pjD-SN-9C8" id="yFQ-Vx-oqy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7di-IK-6cl">
+                    <rect key="frame" x="8" y="14" width="78" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7di-IK-6cl" secondAttribute="height" multiplier="39:7" id="8za-mF-Dds"/>
+                        <constraint firstAttribute="height" constant="14" id="dVi-wL-cis"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFq-6p-lyi" userLabel="DropDown Class View">
+                    <rect key="frame" x="8" y="27" width="304" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-2k-sYd">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-vx-tvi">
+                            <rect key="frame" x="8" y="0.0" width="296" height="30"/>
+                            <state key="normal" title="Select Class"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="NRF-Vi-OUQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ipg-vx-tvi" secondAttribute="bottom" id="6WR-tc-ff4"/>
+                        <constraint firstAttribute="bottom" secondItem="N5r-2k-sYd" secondAttribute="bottom" id="LNZ-AR-aQg"/>
+                        <constraint firstItem="ipg-vx-tvi" firstAttribute="leading" secondItem="bFq-6p-lyi" secondAttribute="leading" constant="8" id="NCF-NT-0KL"/>
+                        <constraint firstAttribute="width" secondItem="bFq-6p-lyi" secondAttribute="height" multiplier="152:15" id="Vom-Yf-Sn9"/>
+                        <constraint firstAttribute="trailing" secondItem="ipg-vx-tvi" secondAttribute="trailing" id="ZOR-ha-GUH"/>
+                        <constraint firstItem="ipg-vx-tvi" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="top" id="dDh-5w-ay3"/>
+                        <constraint firstItem="N5r-2k-sYd" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="top" id="hCo-7C-V8A"/>
+                        <constraint firstAttribute="trailing" secondItem="N5r-2k-sYd" secondAttribute="trailing" id="sMU-Vf-kpB"/>
+                        <constraint firstItem="N5r-2k-sYd" firstAttribute="leading" secondItem="bFq-6p-lyi" secondAttribute="leading" id="vFU-2z-6tj"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-2d-eQz">
+                    <rect key="frame" x="78" y="110" width="165" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="669-xb-85e"/>
+                        <constraint firstAttribute="width" secondItem="B4Q-2d-eQz" secondAttribute="height" multiplier="165:43" id="XlJ-Id-EqU"/>
+                    </constraints>
+                    <state key="normal" title="Proceed"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="ycH-tn-NGl"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pjD-SN-9C8">
+                    <rect key="frame" x="8" y="55" width="304" height="209"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pjD-SN-9C8" secondAttribute="height" multiplier="16:11" id="ILA-uS-zyy"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="m7M-6l-AW9"/>
+                        <outlet property="delegate" destination="-1" id="1Lx-x6-PLD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pjD-SN-9C8" secondAttribute="bottom" id="5wE-xI-0al"/>
+                <constraint firstItem="B4Q-2d-eQz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QiB-yt-uqb"/>
+                <constraint firstItem="7di-IK-6cl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TFP-ZH-ogN"/>
+                <constraint firstItem="7di-IK-6cl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="YiS-K8-KxA"/>
+                <constraint firstItem="pjD-SN-9C8" firstAttribute="trailing" secondItem="bFq-6p-lyi" secondAttribute="trailing" id="Zr0-2F-zcu"/>
+                <constraint firstItem="pjD-SN-9C8" firstAttribute="leading" secondItem="bFq-6p-lyi" secondAttribute="leading" id="aap-FO-xfa"/>
+                <constraint firstItem="pjD-SN-9C8" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="bottom" constant="-2" id="cES-5U-3j2"/>
+                <constraint firstAttribute="trailing" secondItem="bFq-6p-lyi" secondAttribute="trailing" constant="8" id="fAz-by-O3j"/>
+                <constraint firstItem="B4Q-2d-eQz" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="bottom" constant="53" id="gJi-qX-Fi9"/>
+                <constraint firstItem="bFq-6p-lyi" firstAttribute="top" secondItem="7di-IK-6cl" secondAttribute="bottom" constant="-1" id="km3-za-LVz"/>
+                <constraint firstItem="bFq-6p-lyi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="lSz-ZN-5NJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="245" y="203"/>
+        </view>
+    </objects>
+</document>
