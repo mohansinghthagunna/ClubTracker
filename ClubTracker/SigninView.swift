@@ -19,6 +19,8 @@ class SigninView: UIView {
     
     //MARK: --Outlets
     
+    @IBOutlet weak var txtUserName: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
 
     //MARK: --Declarations
     var view:UIView!
@@ -52,7 +54,17 @@ class SigninView: UIView {
     //MARK: --Button Actions
 
     @IBAction func signinButton_Tapped(sender: AnyObject) {
+      
+        if (txtUserName.text != "" && txtPassword.text != ""){
+            (sender as! UIButton).tag = 9
         self.delegate?.buttonTapped(sender as! UIButton)
+        }
+        else{
+            (sender as! UIButton).tag = 90
+            
+            self.delegate?.buttonTapped(sender as! UIButton)
+           
+        }
     }
     //MARK: --Custom Functions
 

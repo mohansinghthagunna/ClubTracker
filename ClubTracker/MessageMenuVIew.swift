@@ -1,15 +1,14 @@
 //
-//  NavbarView.swift
+//  MessageMenuVIew.swift
 //  ClubTracker
 //
-//  Created by Developer8 on 8/19/16.
+//  Created by Mohan Singh Thagunna on 8/22/16.
 //  Copyright © 2016 CreatuDevelopers. All rights reserved.
 //
 
 import UIKit
 
-class NavbarView: UIView {
-
+class MessageMenuVIew: UIView {
     //MARK: --Outlets
     
     
@@ -29,7 +28,7 @@ class NavbarView: UIView {
     
     func loadViewFromNib() -> UIView {
         let bundle = NSBundle(forClass:self.dynamicType)
-        let nib = UINib(nibName: "NavbarView", bundle: bundle)
+        let nib = UINib(nibName: "MessageMenuVIew", bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         return view
     }
@@ -45,4 +44,7 @@ class NavbarView: UIView {
     //MARK: --Button Actions
     
     //MARK: --Custom Functions
+    
 }
+
+

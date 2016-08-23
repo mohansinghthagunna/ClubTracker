@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol menuViewDelegates{
+    func didMenuSelect(menuIndex:Int)
+}
 class TeacherMenuView: UIView {
 
     
@@ -17,7 +20,9 @@ class TeacherMenuView: UIView {
     
     //MARK: --Declarations
     var view:UIView!
-    
+    var delegate:menuViewDelegates?
+    var menuImage = ["register-icon.png","message-icon.png","chat-icon.png","diary-icon.png","camera-icon.png","target-icon.png","shop_icon.png","social-media.jpg","contact-icon.png"]
+    var menuTitle = ["Register","Message","Chat","Diary","Camera","Target/Stats","Shop","Social Media","Contact US"]
     //MARK: --View Setup
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -73,9 +78,11 @@ extension TeacherMenuView:UICollectionViewDelegate,UICollectionViewDataSource{
         
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! TeacherMenuItemCell
+        cell.imgBG.image = UIImage(named: menuImage[indexPath.row])
+        cell.viewScore.hidden = true
+        cell.lblMenuTitle.text = menuTitle[indexPath.row]
         
-        
-        cell.backgroundColor = UIColor.yellowColor() // make cell more visible in our example project
+        cell.backgroundColor = UIColor.whiteColor() // make cell more visible in our example project
         
         return cell
     }
@@ -85,6 +92,7 @@ extension TeacherMenuView:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
+        delegate?.didMenuSelect(indexPath.row)
     }
 }
 

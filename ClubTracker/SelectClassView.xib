@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,18 +30,23 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFq-6p-lyi" userLabel="DropDown Class View">
                     <rect key="frame" x="8" y="27" width="304" height="30"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-2k-sYd">
-                            <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-2k-sYd">
+                            <rect key="frame" x="0.0" y="8" width="304" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="G6s-PF-2gW"/>
+                            </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-vx-tvi">
                             <rect key="frame" x="8" y="0.0" width="296" height="30"/>
-                            <state key="normal" title="Select Class"/>
+                            <state key="normal" title="Select Class">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="NRF-Vi-OUQ"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.35241676640000003" green="0.54558057709999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="ipg-vx-tvi" secondAttribute="bottom" id="6WR-tc-ff4"/>
@@ -50,18 +55,19 @@
                         <constraint firstAttribute="width" secondItem="bFq-6p-lyi" secondAttribute="height" multiplier="152:15" id="Vom-Yf-Sn9"/>
                         <constraint firstAttribute="trailing" secondItem="ipg-vx-tvi" secondAttribute="trailing" id="ZOR-ha-GUH"/>
                         <constraint firstItem="ipg-vx-tvi" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="top" id="dDh-5w-ay3"/>
-                        <constraint firstItem="N5r-2k-sYd" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="top" id="hCo-7C-V8A"/>
                         <constraint firstAttribute="trailing" secondItem="N5r-2k-sYd" secondAttribute="trailing" id="sMU-Vf-kpB"/>
                         <constraint firstItem="N5r-2k-sYd" firstAttribute="leading" secondItem="bFq-6p-lyi" secondAttribute="leading" id="vFU-2z-6tj"/>
                     </constraints>
                 </view>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-2d-eQz">
-                    <rect key="frame" x="78" y="110" width="165" height="43"/>
+                    <rect key="frame" x="8" y="110" width="304" height="43"/>
+                    <color key="backgroundColor" red="0.35241676640000003" green="0.54558057709999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="165" id="669-xb-85e"/>
-                        <constraint firstAttribute="width" secondItem="B4Q-2d-eQz" secondAttribute="height" multiplier="165:43" id="XlJ-Id-EqU"/>
+                        <constraint firstAttribute="height" constant="43" id="qD6-7g-EBM"/>
                     </constraints>
-                    <state key="normal" title="Proceed"/>
+                    <state key="normal" title="Proceed">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="ycH-tn-NGl"/>
                     </connections>
@@ -86,14 +92,19 @@
                 <constraint firstItem="7di-IK-6cl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="YiS-K8-KxA"/>
                 <constraint firstItem="pjD-SN-9C8" firstAttribute="trailing" secondItem="bFq-6p-lyi" secondAttribute="trailing" id="Zr0-2F-zcu"/>
                 <constraint firstItem="pjD-SN-9C8" firstAttribute="leading" secondItem="bFq-6p-lyi" secondAttribute="leading" id="aap-FO-xfa"/>
+                <constraint firstAttribute="trailing" secondItem="B4Q-2d-eQz" secondAttribute="trailing" constant="8" id="byc-RU-F1o"/>
                 <constraint firstItem="pjD-SN-9C8" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="bottom" constant="-2" id="cES-5U-3j2"/>
                 <constraint firstAttribute="trailing" secondItem="bFq-6p-lyi" secondAttribute="trailing" constant="8" id="fAz-by-O3j"/>
                 <constraint firstItem="B4Q-2d-eQz" firstAttribute="top" secondItem="bFq-6p-lyi" secondAttribute="bottom" constant="53" id="gJi-qX-Fi9"/>
                 <constraint firstItem="bFq-6p-lyi" firstAttribute="top" secondItem="7di-IK-6cl" secondAttribute="bottom" constant="-1" id="km3-za-LVz"/>
                 <constraint firstItem="bFq-6p-lyi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="lSz-ZN-5NJ"/>
+                <constraint firstItem="B4Q-2d-eQz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ows-tE-l6r"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="245" y="203"/>
         </view>
     </objects>
+    <resources>
+        <image name="button" width="330" height="19"/>
+    </resources>
 </document>

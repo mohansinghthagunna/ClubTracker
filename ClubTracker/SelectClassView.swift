@@ -69,7 +69,14 @@ class SelectClassView: UIView {
             }
         }
         else{
+            if btnSelectClass.titleLabel?.text != "Select Class"{
+                 (sender as! UIButton).tag = 9
             delegate?.buttonTapped(sender as! UIButton)
+            }
+            else{
+                (sender as! UIButton).tag = 90
+                delegate?.buttonTapped(sender as! UIButton)
+            }
         }
     }
     //MARK: --Custom Functions

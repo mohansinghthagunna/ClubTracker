@@ -21,9 +21,8 @@ class SelectClassVC: UIViewController {
         setupView()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
     }
     
     //MARK: --Custom Function
@@ -41,8 +40,33 @@ class SelectClassVC: UIViewController {
 //MARK: --selectClass View Delegates
 extension SelectClassVC: selectClassViewDelegate{
     func buttonTapped(sender: UIButton) {
+        if sender.tag == 90{
+            // Create the alert controller
+            let alertController = UIAlertController(title: "Required", message: "Please Select Class At First", preferredStyle: .Alert)
+            
+            // Create the actions
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+            }
+            //            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+            //                UIAlertAction in
+            //                NSLog("Cancel Pressed")
+            //            }
+            
+            // Add the actions
+            alertController.addAction(okAction)
+            //   alertController.addAction(cancelAction)
+            
+            // Present the controller
+            self.presentViewController(alertController, animated: true, completion: nil)
+ 
+        }
+        else{
         let secondVC = self.storyboard!.instantiateViewControllerWithIdentifier("homeVC") as! HomeVC
+            print(sender.titleLabel!.text)
+            secondVC.titles = sender.titleLabel!.text
         self.navigationController?.pushViewController(secondVC, animated: true)
-
+        }
     }
 }

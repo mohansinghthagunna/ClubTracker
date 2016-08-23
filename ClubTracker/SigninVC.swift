@@ -22,9 +22,8 @@ class SigninVC: UIViewController {
         setupView()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
     }
     
     //MARK: --Custom Function
@@ -42,7 +41,30 @@ class SigninVC: UIViewController {
 //MARK: --Signin delegates
 extension SigninVC:signinViewDelegate{
     func buttonTapped(sender: UIButton){
+        if sender.tag == 90 {
+            // Create the alert controller
+            let alertController = UIAlertController(title: "Missing", message: "Please Insert Username And Password", preferredStyle: .Alert)
+            
+            // Create the actions
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+            }
+//            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+//                UIAlertAction in
+//                NSLog("Cancel Pressed")
+//            }
+            
+            // Add the actions
+            alertController.addAction(okAction)
+         //   alertController.addAction(cancelAction)
+            
+            // Present the controller
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else{
         let secondVC = self.storyboard!.instantiateViewControllerWithIdentifier("selectClassVC") as! SelectClassVC
         self.navigationController?.pushViewController(secondVC, animated: true)
+        }
     }
 }
